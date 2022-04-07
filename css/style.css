@@ -1,0 +1,275 @@
+/*Обнуление всех стилей*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+/*header*/
+
+a {
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    color: #fff;
+    font-family: 'Source Serif Pro', serif;
+}
+
+.header_rev {
+    padding-left: 50px;
+    padding-top: 35px;
+}
+
+header {
+    background-color: black;
+    padding-bottom: 100px;
+    
+}
+.header_text_header {
+    font-weight: 800;
+    font-size:25px
+}
+.header_text_footer {
+    font-size: 12px;
+    padding-top: 5px;
+}
+
+/*center_header*/
+
+.header_center {
+
+}
+
+.header_center_rev {
+    text-align: center;
+}
+
+.header_center_header {
+    font-weight: 800;
+    font-size:25px;
+    padding-top:150px;
+}
+
+.header_center_footer {
+    font-weight: 800;
+    font-size:25px;
+    padding-top:25px;
+    color: #00bfff;
+}
+
+/*footer_header*/
+
+.header_footer {
+    text-align: center;
+    padding-top: 100px;
+}
+.header_footer_block_rev {
+    display:inline-flex;
+    text-align: center;
+}
+
+.header_footer_block_one{
+    padding-left: 200px;
+}
+
+.header_footer_block_two{
+    padding-right: 75px;
+    padding-left: 75px;
+}
+
+.header_footer_block_tree{
+    padding-right: 200px;
+}
+
+.header_footer_block_text {
+    font-weight:800;
+    font-size:25px;
+    padding-top:25px;
+}
+
+.header_footer_block_text_footer {
+    font-weight: 800;
+    font-size:25px;
+    padding-top:25px;
+    padding-bottom: 150px;
+}
+
+/*center*/
+
+footer {
+    background-color: black;
+}
+
+.center-block_footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+.center_block_plugin {
+    padding-top: 40px;
+}
+.plugin_one {
+    background-color: #3a3d3a;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    padding: 25px;
+    width: 551px;
+}
+.plugin_two {
+
+}
+.img_center {
+   
+}
+.center_img_block {
+    display:flex;
+}
+.center_block_text {
+    float: right;
+    font-weight: 800;
+    font-size: 25px;
+    padding: 5px;
+    padding-left: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.center_block_text_one {
+    float:left;
+    padding: 5px;
+    padding-left: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+.center_text_block_g {
+    display: inline-grid;
+}
+
+.rating-mini {
+	display: inline-block;
+	font-size: 0;
+    padding-left: 15px;
+    margin-bottom: 5px;
+}
+.rating-mini span {
+	padding: 0;
+	font-size: 20px;
+	line-height: 1;
+	color: lightgrey;
+}
+.rating-mini > span:before {
+	content: '★';
+}
+.rating-mini > span.active {
+	color: gold;
+}
+
+.button {
+    background-color: #2A8EFF; /* Green */
+    border: none;
+    color: white;
+    padding: 11px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 14px;
+    margin-left: 15px;
+}
+.center-block_footer_1 {
+    font-weight: 800;
+    font-size:25px;
+    padding-top:25px;
+    padding-bottom: 150px;
+}
+.iua {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*адптация*/
+
+@media (max-width:1400px) {
+    .media {
+        min-width: 980px;
+    }
+    .center-block_footer {
+        display:grid;
+    }
+    .iua {
+        display:grid;
+    }
+    .center_block_plugin {
+        padding: 0;
+    }
+}
+@media (max-width:980px) {
+    .media {
+        min-width: 750px;
+    }
+    .plugin_one {
+        width: 345px;
+        padding: 10px;
+    } 
+    .img_center {
+        height:125px;
+        max-width: 125px;
+    }
+    .center_block_text {
+        font-size: 20px;
+    }
+    .header_footer_block_text {
+        padding: 0;
+    }
+    .header_footer_block_text_footer {
+        padding: 0;
+    }
+    .header_footer_block_tree {
+        padding: 0;
+        padding-right: 5px;
+    }
+    .header_footer_block_two {
+        padding-right: 25px;
+        padding-left: 25px; 
+    }
+    .header_footer_block_one {
+        padding:0;
+        padding-left: 5px;
+    }
+
+}
+@media (max-width:751px) {
+    .media {
+        min-width: 1px;
+    }
+}
+
